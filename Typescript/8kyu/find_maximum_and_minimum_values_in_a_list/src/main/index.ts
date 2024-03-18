@@ -1,5 +1,7 @@
 export function min(list: number[]): number {
-    return list.length > 1 ? list.sort()[0] : list[0]
+    return list.length > 1
+        ? list.sort((a: number, b: number) => a - b)[0]
+        : list[0]
 }
 export function max(list: number[]): number {
     return list.length > 1

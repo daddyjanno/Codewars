@@ -1,8 +1,9 @@
+const { sameCase } = require('../main/index.js')
 describe('Check if two given characters are the same case', () => {
-    it('should return -1 if none of the characters are letters', () => {
+    it('should return -1 if at least one of the characters is not a letter', () => {
         expect(sameCase('/t', 'Z')).toBe(-1)
     })
-    it('should return -1 if none of the characters are letters', () => {
+    it('should return -1 if at least one of the characters is not a letter', () => {
         expect(sameCase('H', ':')).toBe(-1)
     })
     it('should return 1 if both of the characters are letters and the same case', () => {

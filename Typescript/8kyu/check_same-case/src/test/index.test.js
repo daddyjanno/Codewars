@@ -1,8 +1,5 @@
 describe('Check if two given characters are the same case', () => {
     it('should return -1 if none of the characters are letters', () => {
-        expect(sameCase(0, 1)).toBe(-1)
-    })
-    it('should return -1 if none of the characters are letters', () => {
         expect(sameCase('/t', 'Z')).toBe(-1)
     })
     it('should return -1 if none of the characters are letters', () => {

@@ -1,7 +1,5 @@
 export function expressionsMatter(a: number, b: number, c: number): number {
-    let result: number[] = []
-
-    result.push(
+    return Math.max(
         a + b + c,
         a * b * c,
         a + b * c,
@@ -9,6 +7,4 @@ export function expressionsMatter(a: number, b: number, c: number): number {
         (a + b) * c,
         a * (b + c)
     )
-
-    return Math.max(...result)
 }

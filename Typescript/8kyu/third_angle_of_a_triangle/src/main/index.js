@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.thirsAngleOfATriangle = void 0;
-function thirsAngleOfATriangle() { }
-exports.thirsAngleOfATriangle = thirsAngleOfATriangle;
+exports.thirdAngleOfATriangle = void 0;
+function thirdAngleOfATriangle(a, b) {
+    return 180 - a - b;
+}
+exports.thirdAngleOfATriangle = thirdAngleOfATriangle;

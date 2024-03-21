@@ -1,5 +1,12 @@
 export function realNumbers(n: number): number {
-    return Array.from({ length: n }, (n: number, i) => i + 1).filter(
-        (el: number) => el % 2 !== 0 && el % 3 !== 0 && el % 5 !== 0
-    ).length
+    return (
+        n -
+        (Math.floor(n / 2) +
+            Math.floor(n / 3) +
+            Math.floor(n / 5) -
+            Math.floor(n / 6) -
+            Math.floor(n / 10) -
+            Math.floor(n / 15) +
+            Math.floor(n / 30))
+    )
 }

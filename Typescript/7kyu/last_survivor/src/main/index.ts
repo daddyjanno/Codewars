@@ -1,5 +1,4 @@
 export function lastSurvivor(letters: string, coords: number[]): string {
-    let result = ''
     let lettersLeft = letters.split('')
 
     for (let i = 0; i < coords.length; i++) {

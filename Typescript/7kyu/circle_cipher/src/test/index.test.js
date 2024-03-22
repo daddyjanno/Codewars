@@ -8,14 +8,14 @@ describe('Encode function', () => {
         expect(encode('white')).toBe('wehti')
     })
     it('should return Atsrse"', () => {
-        expect(encode('Assert')).toBe('Atsrse"')
+        expect(encode('Assert')).toBe('Atsrse')
     })
     it('should return H!edlllroo w"', () => {
-        expect(encode('Hello world!')).toBe('H!edlllroo w"')
+        expect(encode('Hello world!')).toBe('H!edlllroo w')
     })
     it('should return Y.oaut ahka vsei hcth oesteanl stnoa rt"', () => {
         expect(encode('You have chosen to translate this kata.')).toBe(
-            'Y.oaut ahka vsei hcth oesteanl stnoa rt"'
+            'Y.oaut ahka vsei hcth oesteanl stnoa rt'
         )
     })
 })

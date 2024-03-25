@@ -2,16 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.maxIntChain = void 0;
 function maxIntChain(n) {
-    let result = [];
-    if (n < 5) {
-        return -1;
-    }
-    for (let i = 1; i < n / 2; i++) {
-        if ((n - i) * i && n - i !== i) {
-            result.push((n - i) * i);
-        }
-        console.log(result);
-    }
-    return result.sort((a, b) => b - a)[0];
+    return n < 5 ? -1 : Math.floor(n / 2 + 1) * Math.ceil(n / 2 - 1);
 }
 exports.maxIntChain = maxIntChain;

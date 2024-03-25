@@ -1,13 +1,3 @@
 export function maxIntChain(n: number): number {
-    let result: number[] = []
-    if (n < 5) {
-        return -1
-    }
-    for (let i = 1; i < n / 2; i++) {
-        if ((n - i) * i && n - i !== i) {
-            result.push((n - i) * i)
-        }
-        console.log(result)
-    }
-    return result.sort((a: number, b: number) => b - a)[0]
+    return n < 5 ? -1 : Math.floor(n / 2 + 1) * Math.ceil(n / 2 - 1)
 }

@@ -28,7 +28,6 @@ let table = [
 ]
 export function addLetters(...letters: string[]): string {
     if (!letters.length) {
-        console.log('no args')
         return 'z'
     }
     let numbersArray = []
@@ -38,6 +37,11 @@ export function addLetters(...letters: string[]): string {
     }
 
     let result = numbersArray.reduce((curr, acc) => curr + acc, 0)
+    console.log(result, result % 26)
 
-    return result <= 26 ? table[result - 1] : table[(result % 26) - 1]
+    return result % 26 === 0 && result < 27
+        ? table[result - 1]
+        : result % 26 === 0
+        ? 'z'
+        : table[(result % 26) - 1]
 }

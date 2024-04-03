@@ -31,7 +31,6 @@ let table = [
 ];
 function addLetters(...letters) {
     if (!letters.length) {
-        console.log('no args');
         return 'z';
     }
     let numbersArray = [];
@@ -39,6 +38,11 @@ function addLetters(...letters) {
         numbersArray.push(table.indexOf(letters[i]) + 1);
     }
     let result = numbersArray.reduce((curr, acc) => curr + acc, 0);
-    return result <= 26 ? table[result - 1] : table[(result % 26) - 1];
+    console.log(result, result % 26);
+    return result % 26 === 0 && result < 27
+        ? table[result - 1]
+        : result % 26 === 0
+            ? 'z'
+            : table[(result % 26) - 1];
 }
 exports.addLetters = addLetters;

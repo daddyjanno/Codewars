@@ -8,6 +8,6 @@ describe('School cipher', () => {
         expect(decrypt("'98''111''66'")).toBe('Bob')
     })
     it('should return "30 71"', () => {
-        expect(decrypt('30 71')).toBe('30 71')
+        expect(decrypt('30 71')).toBe('17 03')
     })
 })

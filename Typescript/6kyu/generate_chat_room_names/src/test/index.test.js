@@ -33,4 +33,15 @@ describe('Generate Chat Rooms, with many users', () => {
             ])
         ).toStrictEqual(['Jane B', 'Jane D', 'Joe', 'John'])
     })
+    it("should return user's full names if there is a first and initials collision", () => {
+        expect(
+            generateChatRoomNames([
+                'Joe Bloggs',
+                'John Smith',
+                'Jane Doe',
+                'Jane Bloggs',
+                'John Scott',
+            ])
+        ).toStrictEqual(['Jane B', 'Jane D', 'Joe', 'John Scott', 'John Smith'])
+    })
 })

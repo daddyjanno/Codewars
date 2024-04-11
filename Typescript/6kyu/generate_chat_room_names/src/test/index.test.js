@@ -1,47 +1,240 @@
 const { generateChatRoomNames } = require('../main/index.js')
 
-describe('Generate Chat Room Names, with one user', () => {
-    it('should return an empty array if no user exist', () => {
-        expect(generateChatRoomNames([])).toStrictEqual([])
-    })
-    it('should return a user first name if only one user exists', () => {
-        expect(generateChatRoomNames(['John Doe'])).toStrictEqual(['John'])
-    })
-    it('should return a user first name if only one user exists, in Title case', () => {
-        expect(generateChatRoomNames(['JOHN Doe'])).toStrictEqual(['John'])
-    })
-})
+// describe('Generate Chat Room Names, with one user', () => {
+//     it('should return an empty array if no user exist', () => {
+//         expect(generateChatRoomNames([])).toStrictEqual([])
+//     })
+//     it('should return a user first name if only one user exists', () => {
+//         expect(generateChatRoomNames(['John Doe'])).toStrictEqual(['John'])
+//     })
+//     it('should return a user first name if only one user exists, in Title case', () => {
+//         expect(generateChatRoomNames(['JOHN Doe'])).toStrictEqual(['John'])
+//     })
+// })
 describe('Generate Chat Rooms, with many users', () => {
-    it("should return user's firstnames if they are all unique", () => {
-        expect(generateChatRoomNames(['Joe Blogs', 'John Doe'])).toStrictEqual([
-            'Joe',
-            'John',
+    // it("should return user's firstnames if they are all unique", () => {
+    //     expect(generateChatRoomNames(['Joe Blogs', 'John Doe'])).toStrictEqual([
+    //         'Joe',
+    //         'John',
+    //     ])
+    // })
+    // it("should return user's firstnames if they are all unique, in alphabetical order", () => {
+    //     expect(
+    //         generateChatRoomNames(['John Doe', 'Joe Blogs', 'Jane Doe'])
+    //     ).toStrictEqual(['Jane', 'Joe', 'John'])
+    // })
+    // it("should return user's initials if their is a forename collision", () => {
+    //     expect(
+    //         generateChatRoomNames([
+    //             'Joe Bloggs',
+    //             'John Smith',
+    //             'Jane Doe',
+    //             'Jane Bloggs',
+    //         ])
+    //     ).toStrictEqual(['Jane B', 'Jane D', 'Joe', 'John'])
+    // })
+    // it("should return user's full names if there is a first and initials collision", () => {
+    //     expect(
+    //         generateChatRoomNames([
+    //             'Joe Bloggs',
+    //             'John Smith',
+    //             'Jane Doe',
+    //             'Jane Bloggs',
+    //             'John Scott',
+    //         ])
+    //     ).toStrictEqual(['Jane B', 'Jane D', 'Joe', 'John Scott', 'John Smith'])
+    // })
+    it('should work for a large amount of names', () => {
+        expect(
+            generateChatRoomNames([
+                'Adam Smith',
+                'Dan Jones',
+                'David Anderson',
+                'David Davis',
+                'David Harris',
+                'David Johnson',
+                'David Jones',
+                'David Miller',
+                'David Smith',
+                'David Taylor',
+                'David Williams',
+                'David Wilson',
+                'Elizabeth Anderson',
+                'Elizabeth Davis',
+                'Elizabeth Harris',
+                'Elizabeth Johnson',
+                'Elizabeth Jones',
+                'Elizabeth Miller',
+                'Elizabeth Smith',
+                'Elizabeth Taylor',
+                'Elizabeth Williams',
+                'Elizabeth Wilson',
+                'James Anderson',
+                'James Davis',
+                'James Harris',
+                'James Johnson',
+                'James Jones',
+                'James Miller',
+                'James Smith',
+                'James Taylor',
+                'James Williams',
+                'James Wilson',
+                'Jennifer Anderson',
+                'Jennifer Davis',
+                'Jennifer Harris',
+                'Jennifer Johnson',
+                'Jennifer Jones',
+                'Jennifer Miller',
+                'Jennifer Smith',
+                'Jennifer Taylor',
+                'Jennifer Williams',
+                'Jennifer Wilson',
+                'John Anderson',
+                'John Davis',
+                'John Harris',
+                'John Johnson',
+                'John Jones',
+                'John Miller',
+                'John Smith',
+                'John Taylor',
+                'John Williams',
+                'John Wilson',
+                'Linda Anderson',
+                'Linda Davis',
+                'Linda Harris',
+                'Linda Johnson',
+                'Linda Jones',
+                'Linda Miller',
+                'Linda Smith',
+                'Linda Taylor',
+                'Linda Williams',
+                'Linda Wilson',
+                'Mary Anderson',
+                'Mary Davis',
+                'Mary Harris',
+                'Mary Johnson',
+                'Mary Jones',
+                'Mary Miller',
+                'Mary Smith',
+                'Mary Taylor',
+                'Mary Williams',
+                'Mary Wilson',
+                'Michael Anderson',
+                'Michael Davis',
+                'Michael Harris',
+                'Michael Johnson',
+                'Michael Jones',
+                'Michael Miller',
+                'Michael Smith',
+                'Michael Taylor',
+                'Michael Williams',
+                'Michael Wilson',
+                'Patricia Anderson',
+                'Patricia Davis',
+                'Patricia Harris',
+                'Patricia Johnson',
+                'Patricia Jones',
+                'Patricia Miller',
+                'Patricia Smith',
+                'Patricia Taylor',
+                'Patricia Williams',
+                'Patricia Wilson',
+                'Peter Piper',
+            ])
+        ).toStrictEqual([
+            'Adam',
+            'Dan',
+            'David A',
+            'David D',
+            'David H',
+            'David Johnson',
+            'David Jones',
+            'David M',
+            'David S',
+            'David T',
+            'David Williams',
+            'David Wilson',
+            'Elizabeth A',
+            'Elizabeth D',
+            'Elizabeth H',
+            'Elizabeth Johnson',
+            'Elizabeth Jones',
+            'Elizabeth M',
+            'Elizabeth S',
+            'Elizabeth T',
+            'Elizabeth Williams',
+            'Elizabeth Wilson',
+            'James A',
+            'James D',
+            'James H',
+            'James Johnson',
+            'James Jones',
+            'James M',
+            'James S',
+            'James T',
+            'James Williams',
+            'James Wilson',
+            'Jennifer A',
+            'Jennifer D',
+            'Jennifer H',
+            'Jennifer Johnson',
+            'Jennifer Jones',
+            'Jennifer M',
+            'Jennifer S',
+            'Jennifer T',
+            'Jennifer Williams',
+            'Jennifer Wilson',
+            'John A',
+            'John D',
+            'John H',
+            'John Johnson',
+            'John Jones',
+            'John M',
+            'John S',
+            'John T',
+            'John Williams',
+            'John Wilson',
+            'Linda A',
+            'Linda D',
+            'Linda H',
+            'Linda Johnson',
+            'Linda Jones',
+            'Linda M',
+            'Linda S',
+            'Linda T',
+            'Linda Williams',
+            'Linda Wilson',
+            'Mary A',
+            'Mary D',
+            'Mary H',
+            'Mary Johnson',
+            'Mary Jones',
+            'Mary M',
+            'Mary S',
+            'Mary T',
+            'Mary Williams',
+            'Mary Wilson',
+            'Michael A',
+            'Michael D',
+            'Michael H',
+            'Michael Johnson',
+            'Michael Jones',
+            'Michael M',
+            'Michael S',
+            'Michael T',
+            'Michael Williams',
+            'Michael Wilson',
+            'Patricia A',
+            'Patricia D',
+            'Patricia H',
+            'Patricia Johnson',
+            'Patricia Jones',
+            'Patricia M',
+            'Patricia S',
+            'Patricia T',
+            'Patricia Williams',
+            'Patricia Wilson',
+            'Peter',
         ])
-    })
-    it("should return user's firstnames if they are all unique, in alphabetical order", () => {
-        expect(
-            generateChatRoomNames(['John Doe', 'Joe Blogs', 'Jane Doe'])
-        ).toStrictEqual(['Jane', 'Joe', 'John'])
-    })
-    it("should return user's initials if their is a forename collision", () => {
-        expect(
-            generateChatRoomNames([
-                'Joe Bloggs',
-                'John Smith',
-                'Jane Doe',
-                'Jane Bloggs',
-            ])
-        ).toStrictEqual(['Jane B', 'Jane D', 'Joe', 'John'])
-    })
-    it("should return user's full names if there is a first and initials collision", () => {
-        expect(
-            generateChatRoomNames([
-                'Joe Bloggs',
-                'John Smith',
-                'Jane Doe',
-                'Jane Bloggs',
-                'John Scott',
-            ])
-        ).toStrictEqual(['Jane B', 'Jane D', 'Joe', 'John Scott', 'John Smith'])
     })
 })

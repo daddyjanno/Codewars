@@ -11,7 +11,7 @@ describe('Letter Triangles tests', () => {
         expect(triangle('CODEWARS')).toBe('L')
     })
     it('should return D', () => {
-        expect(triangle('TRIANLGE')).toBe('D')
+        expect(triangle('TRIANGLE')).toBe('D')
     })
     it('should return A', () => {
         expect(triangle('YOUHAVECHOSENTOTRANSLATETHISKATA')).toBe('A')

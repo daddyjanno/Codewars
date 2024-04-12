@@ -2,17 +2,25 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.triangle = void 0;
 function triangle(row) {
-    let letters = row.split('');
-    let codes = letters.map((letter) => letter.charCodeAt(0) - 64);
-    while (codes.length > 1) {
-        for (let i = 0; i < codes.length; i++) {
-            if (codes[i + 1] !== undefined) {
-                codes[i] = codes[i] + codes[i + 1];
-            }
-        }
-        codes.pop();
-        console.log(codes);
+    let result = '';
+    if (row.length === 1) {
+        return row[0];
     }
-    return String.fromCharCode(codes[0] + 64);
+    let codes = row.split('').map((letter) => letter.charCodeAt(0) - 64);
+    for (let i = 0; i < codes.length - 1; i++) {
+        codes[i] = codes[i] + codes[i + 1];
+        if (codes[i] > 26) {
+            codes[i] -= 26;
+        }
+    }
+    codes.pop();
+    if (codes.length > 1) {
+        row = codes.map((code) => String.fromCharCode(code + 64)).join('');
+        return triangle(row);
+    }
+    else {
+        result = String.fromCharCode(codes[0] + 64);
+    }
+    return result;
 }
 exports.triangle = triangle;

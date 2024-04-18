@@ -14,7 +14,7 @@ public static class Kata {
         return a % b;
     }
     public static int Exponent(int a, int b) {
-        return Math.Pow(a, b);
+        return (int) Math.Pow(a, b);
     }
     public static int Subt(int a, int b) {
         return a - b;

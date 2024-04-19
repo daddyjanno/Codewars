@@ -1,9 +1,8 @@
-using System;
+using System.Text.RegularExpressions;
 
 public static class Kata {
     public static string Replace(string str) {
-        string pattern = @"[aeiouAEIOU]";
-        return Regex.Replace(str, pattern, "!");
-
+        string pattern = @"[aeiou]";
+        return Regex.Replace(str, pattern, "!", RegexOptions.IgnoreCase);
     }
 }

@@ -6,7 +6,7 @@ It implement a cascaded "group by" operation on input elements of type T, groupi
 
 Your task is to implement the `groupBy` function.
 
-```
+```
 const employees = [
 { name: "James", income: 1000, profession: "developer", age: 23, },
 { name: "Robert", income: 1100, profession: "qa", age: 34, },

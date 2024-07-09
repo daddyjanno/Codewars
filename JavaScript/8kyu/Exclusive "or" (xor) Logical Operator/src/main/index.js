@@ -1,5 +1,5 @@
 const xor = (a, b) => {
-    return a && b ? false : a || b ? true : false
+    return a != b
 }
 
 module.exports = xor

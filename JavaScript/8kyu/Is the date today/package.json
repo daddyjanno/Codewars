@@ -1,14 +1,14 @@
 {
-  "name": "is-the-date-today",
-  "version": "1.0.0",
-  "description": "Write a simple function that takes as a parameter a date object and returns a boolean value representing whether the date is today or not.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "jest": "^29.7.0"
-  }
+    "name": "is-the-date-today",
+    "version": "1.0.0",
+    "description": "Write a simple function that takes as a parameter a date object and returns a boolean value representing whether the date is today or not.",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
 }

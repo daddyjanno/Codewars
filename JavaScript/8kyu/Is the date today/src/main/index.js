@@ -1,5 +1,6 @@
 const isToday = (date) => {
-    return
+    const today = new Date().toDateString()
+    return today === date.toDateString()
 }
 
 module.exports = isToday

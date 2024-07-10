@@ -1,0 +1,14 @@
+{
+  "name": "remove-exclamation-marks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Write function RemoveExclamationMarks which removes all exclamation marks from a given string.",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

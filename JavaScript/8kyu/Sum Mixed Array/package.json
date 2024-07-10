@@ -1,0 +1,14 @@
+{
+  "name": "sum-mixed-array",
+  "version": "1.0.0",
+  "description": "Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

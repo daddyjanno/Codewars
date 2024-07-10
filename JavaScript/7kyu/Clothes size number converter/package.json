@@ -1,0 +1,14 @@
+{
+  "name": "clothes-size-number-converter",
+  "version": "1.0.0",
+  "description": "## Description You have clothes international size as text (`xs`, `s`, `xxl`). Your goal is to return European number size as a number from that size.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

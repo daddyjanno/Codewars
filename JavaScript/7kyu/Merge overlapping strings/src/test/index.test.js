@@ -1,5 +1,10 @@
-function mergeStrings(first, second) {
-    // Your solution
-}
+const mergeStrings = require('../main/index.js')
 
-module.exports = mergeStrings
+describe('Test', () => {
+    it('should pass sample tests', () => {
+        expect(mergeStrings('abcde', 'cdefgh')).toBe('abcdefgh')
+        expect(mergeStrings('abaab', 'aabab')).toBe('abaabab')
+        expect(mergeStrings('abc', 'def')).toBe('abcdef')
+        expect(mergeStrings('abc', 'abc')).toBe('abc')
+    })
+})

@@ -1,0 +1,14 @@
+{
+  "name": "if_else_ternary",
+  "version": "1.0.0",
+  "description": "In JavaScript, `if..else` is the most basic conditional statement, it consists of three parts:`condition`, `statement1`, `statement2`, like this:",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

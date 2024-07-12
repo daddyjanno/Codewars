@@ -1,0 +1,14 @@
+{
+  "name": "how-many-are-smaller-than-me",
+  "version": "1.0.0",
+  "description": "Write a function that given, an array arr, returns an array containing at each index `i` the amount of numbers that are smaller than `arr[i]` to the right.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

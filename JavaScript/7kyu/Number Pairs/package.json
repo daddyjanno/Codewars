@@ -1,0 +1,11 @@
+{
+  "name": "number-pairs",
+  "version": "1.0.0",
+  "description": "In this kata the aim is to compare each pair of integers from two arrays, and return a new array of large numbers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "your-order-please",
+  "version": "1.0.0",
+  "description": "Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

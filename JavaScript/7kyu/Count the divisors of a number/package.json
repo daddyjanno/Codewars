@@ -1,0 +1,14 @@
+{
+  "name": "count-the-divisors-of-a-number",
+  "version": "1.0.0",
+  "description": "Count the number of divisors of a positive integer `n`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "check-the-exam",
+  "version": "1.0.0",
+  "description": "The first input array is the key to the correct answers to an exam, like `[\"a\", \"a\", \"b\", \"d\"]`. The second one contains a student's submitted answers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

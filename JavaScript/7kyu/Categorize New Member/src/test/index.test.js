@@ -9,7 +9,7 @@ describe('Test', () => {
                 [19, -2],
                 [104, 20],
             ])
-        ).toBe(['Open', 'Senior', 'Open', 'Senior'])
+        ).toStrictEqual(['Open', 'Senior', 'Open', 'Senior'])
         expect(
             openOrSenior([
                 [3, 12],
@@ -17,7 +17,7 @@ describe('Test', () => {
                 [91, -2],
                 [53, 23],
             ])
-        ).toBe(['Open', 'Open', 'Open', 'Open'])
+        ).toStrictEqual(['Open', 'Open', 'Open', 'Open'])
         expect(
             openOrSenior([
                 [59, 12],
@@ -25,6 +25,6 @@ describe('Test', () => {
                 [12, -2],
                 [12, 12],
             ])
-        ).toBe(['Senior', 'Open', 'Open', 'Open'])
+        ).toStrictEqual(['Senior', 'Open', 'Open', 'Open'])
     })
 })
